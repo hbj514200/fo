@@ -3,17 +3,14 @@ package com.qq.qzone.a133689237.fo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
 
-public class welcome extends AppCompatActivity {
+public class jishuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_jishu);
         getSupportActionBar().hide();
-
-        tiaozhuan();
     }
 
     private void tiaozhuan(){
@@ -21,10 +18,9 @@ public class welcome extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(3500);
-                    Intent intent = new Intent(welcome.this, jishuActivity.class);
+                    Thread.sleep(3000);
+                    Intent intent = new Intent(jishuActivity.this, MainActivity.class);
                     startActivity(intent);
-                    finish();
                 } catch (Exception e){ }
             }
         }).start();
