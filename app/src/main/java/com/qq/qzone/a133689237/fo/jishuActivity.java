@@ -11,6 +11,8 @@ public class jishuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jishu);
         getSupportActionBar().hide();
+
+        tiaozhuan();
     }
 
     private void tiaozhuan(){

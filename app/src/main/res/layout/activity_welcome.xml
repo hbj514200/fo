@@ -3,15 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000" >
+    android:background="@drawable/welcome_background" >
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textColor="#FAFAFA"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="40dp"
-    android:textSize="30sp"
-    android:text="法雨润生   花开见佛"/>
+    <ImageView
+        android:id="@+id/welcome_text"
+        android:src="@drawable/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="60dp"
+        />
 
 </RelativeLayout>
