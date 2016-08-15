@@ -1,17 +1,35 @@
 package com.qq.qzone.a133689237.fo;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Window;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class jishuActivity extends AppCompatActivity {
+public class jishuActivity extends Activity {
+
+    private ImageView image;
+    private TextView tianshu;
+    private TextView fenzhong;
+    private SharedPreferences pre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_jishu);
-        getSupportActionBar().hide();
 
+        image = (ImageView) findViewById(R.id.jishu_tupian);
+        tianshu = (TextView) findViewById(R.id.use_tianshu);
+        fenzhong = (TextView) findViewById(R.id.use_fenzhong);
+        pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);
+
+        tianshu.setText("您已于此诵佛 " + pre.getInt("tianshu",0) + "天");
+        fenzhong.setText("佛乐" + pre.getInt("fenzhong",0) + "分钟");
+
+        suijiPicture();
         tiaozhuan();
     }
 
@@ -21,11 +39,28 @@ public class jishuActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Thread.sleep(3000);
-                    Intent intent = new Intent(jishuActivity.this, MainActivity.class);
+                    Intent intent = new Intent(jishuActivity.this, luanhuanActivity.class);
                     startActivity(intent);
+                    finish();
                 } catch (Exception e){ }
             }
         }).start();
+    }
+
+    private void suijiPicture(){
+        int[] suiji = {
+                R.drawable.jishu_1,
+                R.drawable.jishu_2,
+                R.drawable.jishu_3,
+                R.drawable.jishu_4,
+                R.drawable.jishu_5,
+                R.drawable.jishu_6,
+                R.drawable.jishu_7,
+                R.drawable.jishu_8
+        };
+        int index = (int) ( Math.random()*8 - 1 );
+        if(index < 0)   index = 7;
+        image.setImageResource(suiji[index]);
     }
 
 }

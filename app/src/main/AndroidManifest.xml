@@ -7,23 +7,30 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:screenOrientation="portrait" >
-
-        <activity android:name=".welcome"
-                  android:theme="@style/Noanimation">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".welcome"
+            android:screenOrientation="portrait"
+            android:theme="@style/welcomeTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
         </activity>
-
-        <activity android:name=".jishuActivity"
-            android:theme="@style/Noanimation">
+        <activity
+            android:name=".jishuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/jishuTheme">
         </activity>
-
+        <activity
+            android:name=".luanhuanActivity"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
+
 </manifest>

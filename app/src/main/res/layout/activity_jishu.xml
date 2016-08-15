@@ -2,12 +2,45 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="30dp"
+        android:alpha="0.95">
+        <ImageView
+            android:id="@+id/jishu_tupian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:alpha="0.85"/>
+    </android.support.v7.widget.CardView>
 
     <TextView
+        android:id="@+id/use_fenzhong"
+        android:layout_alignParentBottom="true"
+        android:textSize="19sp"
+        android:layout_margin="40dp"
+        android:paddingBottom="15dp"
+        android:textColor="#EBEBEB"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jishu"/>
+        android:text="佛乐 0 分钟"/>
+
+    <TextView
+        android:id="@+id/use_tianshu"
+        android:layout_above="@id/use_fenzhong"
+        android:textSize="27sp"
+        android:paddingBottom="15dp"
+        android:layout_margin="40dp"
+        android:textColor="#FAFAFA"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您已于此诵佛 0 天"/>
 
 </RelativeLayout>
