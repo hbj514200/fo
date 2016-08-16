@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +16,13 @@ public class jishuActivity extends Activity {
     private TextView tianshu;
     private TextView fenzhong;
     private SharedPreferences pre;
+    private Handler myHandler = new Handler(){
+        public void handleMessage(Message msg) {
+            startActivity(new Intent(jishuActivity.this, luanhuanActivity.class));
+            finish();
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +48,7 @@ public class jishuActivity extends Activity {
             public void run() {
                 try {
                     Thread.sleep(3000);
-                    Intent intent = new Intent(jishuActivity.this, luanhuanActivity.class);
-                    startActivity(intent);
-                    finish();
+                    myHandler.sendMessage(new Message());
                 } catch (Exception e){ }
             }
         }).start();

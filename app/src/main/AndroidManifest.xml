@@ -28,8 +28,7 @@
             android:theme="@style/jishuTheme">
         </activity>
         <activity
-            android:name=".luanhuanActivity"
-            android:theme="@style/FullscreenTheme" >
+            android:name=".luanhuanActivity">
         </activity>
     </application>
 
