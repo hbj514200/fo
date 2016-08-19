@@ -18,7 +18,7 @@ public class jishuActivity extends Activity {
     private SharedPreferences pre;
     private Handler myHandler = new Handler(){
         public void handleMessage(Message msg) {
-            startActivity(new Intent(jishuActivity.this, luanhuanActivity.class));
+            startActivity(new Intent(jishuActivity.this, MainActivity.class));
             finish();
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }

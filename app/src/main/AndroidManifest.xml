@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.qq.qzone.a133689237.fo">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,7 +34,23 @@
             android:theme="@style/jishuTheme">
         </activity>
         <activity
-            android:name=".luanhuanActivity">
+            android:name=".luanhuanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".fankuiActivity"
+            android:label="意见反馈"
+            android:screenOrientation="portrait"
+            android:theme="@style/fankuiTheme">
+        </activity>
+        <activity
+            android:name=".guanyuActivity"
+            android:label="关于作者"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".webActivity"
+                  android:label="佛心禅闻"
+                  android:screenOrientation="portrait">
         </activity>
     </application>
 

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "813244084301",
+    "firebase_url": "https://haha-5f327.firebaseio.com",
+    "project_id": "haha-5f327",
+    "storage_bucket": "haha-5f327.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813244084301:android:5797eec3cc4ee23f",
+        "android_client_info": {
+          "package_name": "com.qq.qzone.a1336892373.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813244084301-c9tmmc330qnt3jcapglqo19f7f68b7hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB77z1h35rF4x75ONoEq_DGDABIa5Dqa1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
