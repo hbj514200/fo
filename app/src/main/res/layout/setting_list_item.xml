@@ -7,6 +7,7 @@
 
     <TextView android:id="@+id/text1"
               android:layout_marginLeft="12dp"
+              android:textSize="20sp"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="8dp"
@@ -15,10 +16,9 @@
     <TextView android:id="@+id/text2"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_marginLeft="12dp"
+              android:layout_marginLeft="8dp"
               android:layout_below="@id/text1"
               android:layout_alignParentBottom="true"
-              android:paddingTop="5dp"
               android:layout_alignStart="@id/text1" />
 
 </TwoLineListItem>

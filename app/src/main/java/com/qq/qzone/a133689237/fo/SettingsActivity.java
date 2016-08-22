@@ -3,6 +3,7 @@ package com.qq.qzone.a133689237.fo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -26,6 +27,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         mListView = (ListView) findViewById(R.id.setting_listview);
 
@@ -36,21 +39,17 @@ public class SettingsActivity extends AppCompatActivity {
         keyValuePair1.put("name", "重置天数");
         keyValuePair1.put("shuomin", "重新设定念佛天数");
         Map<String, String> keyValuePair2 = new HashMap<String, String>();
-        keyValuePair2.put("name", "帮助");
-        keyValuePair2.put("shuomin", "查看关于程序的常见问题的帮助");
+        keyValuePair2.put("name", "意见反馈");
+        keyValuePair2.put("shuomin", "提供您宝贵的建议，帮助我做的更好");
         Map<String, String> keyValuePair3 = new HashMap<String, String>();
-        keyValuePair3.put("name", "意见反馈");
-        keyValuePair3.put("shuomin", "提供您宝贵的建议，帮助我做的更好");
-        Map<String, String> keyValuePair4 = new HashMap<String, String>();
-        keyValuePair4.put("name", "关于软件");
-        keyValuePair4.put("shuomin", "查看关于app版本等信息");
+        keyValuePair3.put("name", "关于软件");
+        keyValuePair3.put("shuomin", "查看关于app版本等信息");
 
         List<Map<String, String>> list = new ArrayList<Map<String, String>>();
         list.add(keyValuePair0);
         list.add(keyValuePair1);
         list.add(keyValuePair2);
         list.add(keyValuePair3);
-        list.add(keyValuePair4);
         ListAdapter adapter = new SimpleAdapter(this, list,
                 R.layout.setting_list_item, new String[] { "name",
                 "shuomin" }, new int[] { R.id.text1,
@@ -67,12 +66,9 @@ public class SettingsActivity extends AppCompatActivity {
                         startActivity(new Intent(SettingsActivity.this, chongzhiActivity.class));
                         break;
                     case 2 :
-                        //startActivity(new Intent(SettingsActivity.this, help.class));
+                        startActivity(new Intent(SettingsActivity.this, fankuiActivity.class));
                         break;
                     case 3 :
-                        startActivity(new Intent(SettingsActivity.this, chongzhiActivity.class));
-                        break;
-                    case 4 :
                         startActivity(new Intent(SettingsActivity.this, guanyuActivity.class));
                         break;
                     default:
@@ -80,6 +76,17 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home :
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 

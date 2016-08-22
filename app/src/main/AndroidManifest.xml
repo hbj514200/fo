@@ -20,7 +20,6 @@
             android:theme="@style/welcomeTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -38,12 +37,14 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
+            android:parentActivityName=".SettingsActivity"
             android:name=".fankuiActivity"
             android:label="意见反馈"
             android:screenOrientation="portrait"
             android:theme="@style/fankuiTheme">
         </activity>
         <activity
+            android:parentActivityName=".SettingsActivity"
             android:name=".guanyuActivity"
             android:label="关于作者"
             android:screenOrientation="portrait">
@@ -54,12 +55,14 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
+            android:parentActivityName=".SettingsActivity"
             android:name=".chongzhiActivity"
             android:label="天数设定"
             android:screenOrientation="portrait">
         </activity>
 
-        <receiver android:name=".guangbo">
+        <receiver android:name=".guangbo"
+                  android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
                 </action>
@@ -67,7 +70,9 @@
         </receiver>
 
         <activity
+            android:parentActivityName=".MainActivity"
             android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
             android:label="设置">
         </activity>
     </application>

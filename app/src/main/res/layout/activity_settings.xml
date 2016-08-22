@@ -11,6 +11,19 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <Button
+        android:id="@+id/fankui_button"
+        android:elevation="8dp"
+        android:textSize="20sp"
+        android:background="#03a9f4"
+        android:layout_marginBottom="5dp"
+        android:text="  捐赠开发者  "
+        android:layout_margin="15dp"
+        android:textColor="#FAFAFA"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TextView
         android:text="传播佛乐  功德无量"
         android:layout_gravity="center_horizontal"
