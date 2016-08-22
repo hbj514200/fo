@@ -14,11 +14,12 @@ public class webActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         webView = (WebView) findViewById(R.id.webview);
-        load("http://www.baidu.com");
+
+        String url = getIntent().getStringExtra("url");
+        load(url);
     }
 
     private void load(String url){
-        webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {

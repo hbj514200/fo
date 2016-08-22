@@ -9,6 +9,7 @@ import android.os.Message;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class jishuActivity extends Activity {
 
@@ -35,8 +36,9 @@ public class jishuActivity extends Activity {
         fenzhong = (TextView) findViewById(R.id.use_fenzhong);
         pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);
 
-        tianshu.setText("您已于此诵佛 " + pre.getInt("tianshu",0) + "天");
-        fenzhong.setText("佛乐" + pre.getInt("fenzhong",0) + "分钟");
+        String st = "您已于此诵佛 " + pre.getInt("tianshu",0)+ " 天";
+        tianshu.setText(st);
+        fenzhong.setText("佛乐悠扬");
 
         suijiPicture();
         tiaozhuan();

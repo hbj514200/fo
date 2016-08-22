@@ -48,9 +48,27 @@
             android:label="关于作者"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".webActivity"
-                  android:label="佛心禅闻"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".webActivity"
+            android:label="佛心禅闻"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".chongzhiActivity"
+            android:label="天数设定"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver android:name=".guangbo">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="设置">
         </activity>
     </application>
 

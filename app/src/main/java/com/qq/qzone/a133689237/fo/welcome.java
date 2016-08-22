@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.ImageView;
+import com.firebase.client.Firebase;
 
 public class welcome extends Activity {
 
@@ -16,6 +17,7 @@ public class welcome extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_welcome);
+        Firebase.setAndroidContext(this);
 
         mText = (ImageView) findViewById(R.id.welcome_text);
 
