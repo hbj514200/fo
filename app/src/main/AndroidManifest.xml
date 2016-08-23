@@ -75,6 +75,14 @@
             android:screenOrientation="portrait"
             android:label="设置">
         </activity>
+
+        <activity
+            android:parentActivityName=".SettingsActivity"
+            android:name=".tuijianqumu_Activity"
+            android:screenOrientation="portrait"
+            android:label="推荐曲目">
+        </activity>
+
     </application>
 
 </manifest>

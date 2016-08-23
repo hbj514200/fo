@@ -32,9 +32,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.setting_listview);
 
-        Map<String, String> keyValuePair0 = new HashMap<String, String>();
-        keyValuePair0.put("name", "循环模式");
-        keyValuePair0.put("shuomin", "选择播放模式：单曲循环、随机、顺序播放");
         Map<String, String> keyValuePair1 = new HashMap<String, String>();
         keyValuePair1.put("name", "重置天数");
         keyValuePair1.put("shuomin", "重新设定念佛天数");
@@ -42,14 +39,17 @@ public class SettingsActivity extends AppCompatActivity {
         keyValuePair2.put("name", "意见反馈");
         keyValuePair2.put("shuomin", "提供您宝贵的建议，帮助我做的更好");
         Map<String, String> keyValuePair3 = new HashMap<String, String>();
-        keyValuePair3.put("name", "关于软件");
-        keyValuePair3.put("shuomin", "查看关于app版本等信息");
+        keyValuePair3.put("name", "推荐曲目");
+        keyValuePair3.put("shuomin", "给我们推荐您想要添加的曲目");
+        Map<String, String> keyValuePair4 = new HashMap<String, String>();
+        keyValuePair4.put("name", "关于软件");
+        keyValuePair4.put("shuomin", "查看关于app版本等信息");
 
         List<Map<String, String>> list = new ArrayList<Map<String, String>>();
-        list.add(keyValuePair0);
         list.add(keyValuePair1);
         list.add(keyValuePair2);
         list.add(keyValuePair3);
+        list.add(keyValuePair4);
         ListAdapter adapter = new SimpleAdapter(this, list,
                 R.layout.setting_list_item, new String[] { "name",
                 "shuomin" }, new int[] { R.id.text1,
@@ -59,9 +59,6 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                    case 0 :
-                        //startActivity(new Intent(SettingsActivity.this, ));
-                        break;
                     case 1 :
                         startActivity(new Intent(SettingsActivity.this, chongzhiActivity.class));
                         break;
@@ -69,6 +66,9 @@ public class SettingsActivity extends AppCompatActivity {
                         startActivity(new Intent(SettingsActivity.this, fankuiActivity.class));
                         break;
                     case 3 :
+                        startActivity(new Intent(SettingsActivity.this, tuijianqumu_Activity.class));
+                        break;
+                    case 4 :
                         startActivity(new Intent(SettingsActivity.this, guanyuActivity.class));
                         break;
                     default:
