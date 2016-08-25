@@ -1,10 +1,41 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
-             android:layout_height="match_parent" >
+             android:layout_height="match_parent"
+              android:background="#1d214c"
+    android:orientation="vertical">
 
     <ListView
         android:id="@+id/main_listview"
+        android:divider="#3c3c3c"
+        android:dividerHeight="1px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/main_zuo"
+            android:src="@drawable/main_zuo"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:layout_margin="10dp"
+            android:padding="11dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <ImageView
+            android:id="@+id/main_you"
+            android:src="@drawable/main_you"
+            android:adjustViewBounds="true"
+            android:padding="11dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

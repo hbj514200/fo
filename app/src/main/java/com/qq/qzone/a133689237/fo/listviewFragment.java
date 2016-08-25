@@ -11,13 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
-public class listviewFragment extends Fragment implements AdapterView.OnItemClickListener{
+public class listviewFragment extends Fragment implements AdapterView.OnItemClickListener, View.OnClickListener{
     private ListView mListView;
     private String[] strs = class_music.getStr();
     private MediaPlayer mMediaPlayer = null;
     private int old_position = -1;
+    private ImageView zuoButton;
+    private ImageView youButton;
     SharedPreferences pre = null;
 
     @Override
@@ -28,17 +31,25 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         mListView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.main_list_item, strs) );
         mListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         mListView.setOnItemClickListener(this);
+        zuoButton = (ImageView) view.findViewById(R.id.main_zuo);
+        youButton = (ImageView) view.findViewById(R.id.main_you);
+        zuoButton.setOnClickListener(this);
+        youButton.setOnClickListener(this);
 
         return view;
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        huan(position);
+    }
+
+    private void huan(int position){
         if(mMediaPlayer == null){
             mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
             mMediaPlayer.start();
         }
-        if (mMediaPlayer != null){
+        else {
             if(position != old_position){
                 mMediaPlayer.release();
                 mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
@@ -48,7 +59,6 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
                 if(mMediaPlayer.isPlaying())    mMediaPlayer.pause();
                 else                            mMediaPlayer.start();
             }
-
         }
         old_position = position;
     }
@@ -66,4 +76,22 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         pre = getActivity().getSharedPreferences("mydata", Activity.MODE_PRIVATE);
         old_position = pre.getInt("old_position", -1);
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.main_zuo :
+                if (mMediaPlayer != null && old_position >= 1)
+                    huan(old_position - 1);
+                break;
+            case R.id.main_you :
+                if (mMediaPlayer != null && old_position <= 3)
+                    huan(old_position + 1);
+                break;
+            default:
+                break;
+    }
+
+}
+
 }
