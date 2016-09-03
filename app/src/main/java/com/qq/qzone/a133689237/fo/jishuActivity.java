@@ -9,13 +9,11 @@ import android.os.Message;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class jishuActivity extends Activity {
 
     private ImageView image;
     private TextView tianshu;
-    private TextView fenzhong;
     private SharedPreferences pre;
     private Handler myHandler = new Handler(){
         public void handleMessage(Message msg) {
@@ -33,12 +31,10 @@ public class jishuActivity extends Activity {
 
         image = (ImageView) findViewById(R.id.jishu_tupian);
         tianshu = (TextView) findViewById(R.id.use_tianshu);
-        fenzhong = (TextView) findViewById(R.id.use_fenzhong);
         pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);
 
-        String st = "您已于此诵佛 " + pre.getInt("tianshu",0)+ " 天";
+        String st = getResources().getString(R.string.ninyi) + " " + pre.getInt("tianshu",0)+ " "+getResources().getString(R.string.tian);
         tianshu.setText(st);
-        fenzhong.setText("佛乐悠扬");
 
         suijiPicture();
         tiaozhuan();
@@ -49,7 +45,7 @@ public class jishuActivity extends Activity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(2600);
                     myHandler.sendMessage(new Message());
                 } catch (Exception e){ }
             }
@@ -63,12 +59,9 @@ public class jishuActivity extends Activity {
                 R.drawable.jishu_3,
                 R.drawable.jishu_4,
                 R.drawable.jishu_5,
-                R.drawable.jishu_6,
-                R.drawable.jishu_7,
-                R.drawable.jishu_8
         };
-        int index = (int) ( Math.random()*8 - 1 );
-        if(index < 0)   index = 7;
+        int index = (int) ( Math.random()*suiji.length - 1 );
+        if(index < 0)   index = suiji.length -1 ;
         image.setImageResource(suiji[index]);
     }
 

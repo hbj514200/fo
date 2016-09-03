@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <EditText
-        android:hint="输入实际念佛天数"
+        android:hint="@string/shurushiji"
         android:padding="20dp"
         android:id="@+id/chongzhi_edittext"
         android:inputType="number"
@@ -22,7 +22,7 @@
         android:textSize="19sp"
         android:background="#03a9f4"
         android:layout_marginTop="30dp"
-        android:text="确定"
+        android:text="@string/quedin"
         android:layout_margin="15dp"
         android:textColor="#FAFAFA"
         android:layout_gravity="right"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:text="请不要乱来!!"
+        android:text="@string/qinbuyao"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

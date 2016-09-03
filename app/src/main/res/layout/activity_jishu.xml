@@ -29,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="佛乐 0 分钟"/>
+        android:text="@string/foyueyouyang"/>
 
     <TextView
         android:id="@+id/use_tianshu"
@@ -40,7 +40,6 @@
         android:textColor="#FAFAFA"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="您已于此诵佛 0 天"/>
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

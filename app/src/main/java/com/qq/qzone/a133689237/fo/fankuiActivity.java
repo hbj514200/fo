@@ -1,7 +1,5 @@
 package com.qq.qzone.a133689237.fo;
 
-import android.app.ActionBar;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import com.firebase.client.Firebase;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class fankuiActivity extends AppCompatActivity {
 
@@ -53,10 +47,10 @@ public class fankuiActivity extends AppCompatActivity {
 
     private void warning_dialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(fankuiActivity.this);
-        builder.setTitle("提示");
-        builder.setMessage("请按要求输入内容。");
+        builder.setTitle(getResources().getString(R.string.tishi));
+        builder.setMessage(getResources().getString(R.string.qinanyaoqiu));
         builder.setCancelable(false);
-        builder.setPositiveButton("好", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getResources().getString(R.string.hao), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -67,10 +61,10 @@ public class fankuiActivity extends AppCompatActivity {
 
     private void thank_dialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(fankuiActivity.this);
-        builder.setTitle("感谢!");
-        builder.setMessage("非常感谢您的反馈，我会做得更好。");
+        builder.setTitle(getResources().getString(R.string.ganxie));
+        builder.setMessage(getResources().getString(R.string.feichang));
         builder.setCancelable(false);
-        builder.setPositiveButton("好", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getResources().getString(R.string.hao), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

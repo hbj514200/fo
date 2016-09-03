@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:text="您希望我们添加的曲目: "
+        android:text="@string/ninxiwang"
         android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:maxLength="100"
             android:minLines="8"
-            android:hint="感谢您的宝贵建议, 您也可以留下联系方式" />
+            android:hint="@string/ganxieninde" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -32,7 +32,7 @@
         android:textSize="19sp"
         android:background="#03a9f4"
         android:layout_marginTop="18dp"
-        android:text="提交"
+        android:text="@string/tijiao"
         android:layout_margin="15dp"
         android:textColor="#FAFAFA"
         android:layout_gravity="right"

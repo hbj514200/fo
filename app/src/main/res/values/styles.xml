@@ -6,6 +6,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="zhuStyle" parent="AppTheme">
+        <item name="android:windowBackground">@color/beijin</item>
+    </style>
+
+    <style name="juanStyle" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/juanzeng_background</item>
+    </style>
+
     <style name="Noanimation" parent="AppTheme">
         <item name="android:windowAnimationStyle">@style/nullAnimation</item>
         <item name="android:windowNoTitle">true</item>

@@ -80,4 +80,78 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="zhuyi"> 注意 </string>
+    <string name="zhezhen"> 这真的很好吗？ </string>
+    <string name="hao"> 好 </string>
+    <string name="quxiao"> 取消 </string>
+    <string name="tishi"> 提示 </string>
+    <string name="qinan"> 请按要求输入内容。 </string>
+    <string name="chongzhi"> 重置完毕 </string>
+    <string name="foyue1"> 1：星星眨着眼 </string>
+    <string name="foyue2"> 测试2号码 </string>
+    <string name="foyue3"> 测试3号码 </string>
+    <string name="foyue4"> 测试4号码 </string>
+    <string name="foyue5"> 测试5号码 </string>
+    <string name="foyue6"> 测试6号码 </string>
+    <string name="foyue7"> 测试7号码 </string>
+    <string name="foyue8"> 测试8号码 </string>
+    <string name="foyue9"> 测试9号码 </string>
+    <string name="foyue10"> 测试10号码 </string>
+    <string name="foyue11"> 测试11号码 </string>
+    <string name="ninmeiyou"> 您没有安装支付宝客户端，请加微信，爱你们！ </string>
+    <string name="feichang"> 非常感谢您的反馈，我会做得更好。 </string>
+    <string name="ganxie"> 感谢！ </string>
+    <string name="qinanyaoqiu"> 请按要求输入内容。 </string>
+    <string name="foyueyouyang"> 佛乐悠扬 </string>
+    <string name="ninyi"> 您已于此诵佛  </string>
+    <string name="tian"> 天 </string>
+    <string name="maindi_1"> 菩提本无树，明镜亦非台 </string>
+    <string name="maindi_2"> 一花一世界，一佛一如来 </string>
+    <string name="maindi_3"> 大悲无泪，大悟无言，大笑无声 </string>
+    <string name="maindi_4"> 若欲求佛但求心，只这心心心是佛 </string>
+    <string name="maindi_5"> 一念之慈，万物皆善 </string>
+    <string name="maindi_6"> 一念愚即般若绝，一念智即般若生 </string>
+    <string name="maindi_7"> 坐亦禅，行亦禅 </string>
+    <string name="maindi_8"> 谁将烟焚散，散了纵横的牵绊 </string>
+    <string name="maindi_9"> 人生的真理，只是藏在平淡无味之中 </string>
+    <string name="ganxiefankui"> 非常感谢您的反馈，我会做得更好。 </string>
+    <string name="bofangmoshi"> 播放模式 </string>
+    <string name="shuomin1"> 单曲循环 顺序播放 </string>
+    <string name="chongzhitianshu"> 重置天数 </string>
+    <string name="shuomin2"> 重新设定念佛天数 </string>
+    <string name="yijianfankui"> 意见反馈 </string>
+    <string name="ganxieninti"> 提供您宝贵的建议，帮助我做的更好 </string>
+    <string name="tuijianqumu"> 推荐曲目 </string>
+    <string name="shuomin3"> 给我们推荐您想要添加的曲目 </string>
+    <string name="guanyuruanjian"> 关于软件 </string>
+    <string name="shuomin4"> 查看关于app版本等信息 </string>
+    <string name="quedin"> 确定 </string>
+    <string name="danquxunhuan"> 单曲循环 </string>
+    <string name="shunxvbofang"> 顺序播放 </string>
+    <string name="qinxuanze"> 请选择播放模式 </string>
+    <string name="qinbuyao"> 请不要乱来!! </string>
+    <string name="shurushiji"> 输入实际念佛天数 </string>
+    <string name="nindejianyi"> 您的建议:  </string>
+    <string name="tijiao"> 提交 </string>
+    <string name="ganxieninde"> 感谢您的宝贵建议, 您也可以留下联系方式 </string>
+    <string name="banben"> 测试程序 Ver 1.0.0 </string>
+    <string name="juanzeng1"> 五百年前结缘来，前生注定非今日\n短短今生一面遇，前世多少香火缘 </string>
+    <string name="juan_button1">    捐助有缘人    </string>
+    <string name="zhifuhaoma"> 支付宝：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
+    <string name="zhifushuomin"> 您可以通过下面的按钮进行支付宝捐赠，也可以加我微信，成为好友发我发一个小红包哦  (＾－＾)V </string>
+    <string name="zhufu"> 愿佛光注照全家，祈如意伴您永远，我爱你们 </string>
+    <string name="chuanbofoyue"> 传播佛乐  功德无量 </string>
+    <string name="ninxiwang"> 您希望我们添加的曲目:  </string>
+    <string name="shezhi">  设置 </string>
+    <string name="tianshushedin"> 天数设定  </string>
+    <string name="foxinchanwen">  佛心禅闻 </string>
+    <string name="guanyuzuozhe"> 关于作者  </string>
+    <string name="yijianfankui">   </string>
+    <string name="">   </string>
+
+
+
 </resources>

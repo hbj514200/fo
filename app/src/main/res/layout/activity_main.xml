@@ -9,12 +9,16 @@
         android:id="@+id/main_list_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5" />
+        android:layout_weight="18" />
 
-    <ImageView
+    <TextView
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="6dp"
+        android:textColor="#CDCDCD"
+        android:textSize="18sp"
+        android:id="@+id/main_text"
         android:layout_weight="1"
-        android:background="#FAFAFA"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

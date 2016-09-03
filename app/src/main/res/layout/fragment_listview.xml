@@ -1,16 +1,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-              android:background="#1d214c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1d214c"
     android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/main_listview"
-        android:divider="#3c3c3c"
-        android:dividerHeight="1px"
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4"/>
+        android:layout_weight="4"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/main_listview"
+            android:divider="#3c3c3c"
+            android:dividerHeight="1px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="end|top"
+            android:id="@+id/main_fab_setting"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/setting_button"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:backgroundTint="#90a63a"
+            app:pressedTranslationZ="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini" />
+    </android.support.design.widget.CoordinatorLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,13 +38,22 @@
         <ImageView
             android:id="@+id/main_zuo"
             android:src="@drawable/main_zuo"
+            android:elevation="3dp"
             android:layout_alignParentLeft="true"
+            android:alpha="0.95"
             android:adjustViewBounds="true"
             android:layout_margin="10dp"
             android:padding="11dp"
             android:layout_height="match_parent"
             android:layout_width="wrap_content" />
         <ImageView
+            android:src="@drawable/main_foxiang"
+            android:id="@+id/main_foxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:elevation="3dp"
             android:id="@+id/main_you"
             android:src="@drawable/main_you"
             android:adjustViewBounds="true"
@@ -34,6 +61,7 @@
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
             android:layout_height="match_parent"
+            android:alpha="0.95"
             android:layout_width="wrap_content" />
 
     </RelativeLayout>

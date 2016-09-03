@@ -48,10 +48,10 @@ public class tuijianqumu_Activity extends AppCompatActivity {
 
     private void warning_dialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(tuijianqumu_Activity.this);
-        builder.setTitle("提示");
-        builder.setMessage("请按要求输入内容。");
+        builder.setTitle(getResources().getString(R.string.tishi));
+        builder.setMessage(getResources().getString(R.string.qinan));
         builder.setCancelable(false);
-        builder.setPositiveButton("好", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getResources().getString(R.string.hao), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -62,10 +62,10 @@ public class tuijianqumu_Activity extends AppCompatActivity {
 
     private void thank_dialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(tuijianqumu_Activity.this);
-        builder.setTitle("感谢!");
-        builder.setMessage("非常感谢您的反馈，我会做得更好。");
+        builder.setTitle(getResources().getString(R.string.ganxie));
+        builder.setMessage(getResources().getString(R.string.ganxiefankui));
         builder.setCancelable(false);
-        builder.setPositiveButton("好", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getResources().getString(R.string.hao), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

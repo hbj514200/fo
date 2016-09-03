@@ -30,7 +30,7 @@ public class welcome extends Activity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(2700);
                     startActivity(new Intent(welcome.this, jishuActivity.class));
                     finish();
                 } catch (Exception e){ }
