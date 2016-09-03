@@ -84,7 +84,7 @@
 
 
     <string name="zhuyi"> 注意 </string>
-    <string name="zhezhen"> 这真的很好吗？ </string>
+    <string name="zhezhen"> 真的要修改吗？ </string>
     <string name="hao"> 好 </string>
     <string name="quxiao"> 取消 </string>
     <string name="tishi"> 提示 </string>
@@ -132,26 +132,24 @@
     <string name="danquxunhuan"> 单曲循环 </string>
     <string name="shunxvbofang"> 顺序播放 </string>
     <string name="qinxuanze"> 请选择播放模式 </string>
-    <string name="qinbuyao"> 请不要乱来!! </string>
     <string name="shurushiji"> 输入实际念佛天数 </string>
     <string name="nindejianyi"> 您的建议:  </string>
     <string name="tijiao"> 提交 </string>
     <string name="ganxieninde"> 感谢您的宝贵建议, 您也可以留下联系方式 </string>
-    <string name="banben"> 测试程序 Ver 1.0.0 </string>
+    <string name="banben">  佛乐悠扬 Ver 1.0 </string>
     <string name="juanzeng1"> 五百年前结缘来，前生注定非今日\n短短今生一面遇，前世多少香火缘 </string>
     <string name="juan_button1">    捐助有缘人    </string>
     <string name="zhifuhaoma"> 支付宝：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
     <string name="zhifushuomin"> 您可以通过下面的按钮进行支付宝捐赠，也可以加我微信，成为好友发我发一个小红包哦  (＾－＾)V </string>
-    <string name="zhufu"> 愿佛光注照全家，祈如意伴您永远，我爱你们 </string>
+    <string name="zhufu"> 愿佛光注照全家，祈如意伴您永远，爱你们 </string>
     <string name="chuanbofoyue"> 传播佛乐  功德无量 </string>
     <string name="ninxiwang"> 您希望我们添加的曲目:  </string>
     <string name="shezhi">  设置 </string>
     <string name="tianshushedin"> 天数设定  </string>
     <string name="foxinchanwen">  佛心禅闻 </string>
     <string name="guanyuzuozhe"> 关于作者  </string>
-    <string name="yijianfankui">   </string>
-    <string name="">   </string>
-
+    <string name="chongzhianniu"> 重置  </string>
+    <string name="qinbuyao"> 该功能仅仅用于更换手机或重装软件后造成数据丢失后的恢复手段，请根据自己的实际天数修改，诚心修行，阿弥陀佛！ </string>
 
 
 </resources>

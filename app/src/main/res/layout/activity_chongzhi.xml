@@ -22,7 +22,7 @@
         android:textSize="19sp"
         android:background="#03a9f4"
         android:layout_marginTop="30dp"
-        android:text="@string/quedin"
+        android:text="@string/chongzhianniu"
         android:layout_margin="15dp"
         android:textColor="#FAFAFA"
         android:layout_gravity="right"
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:padding="10dp"
         android:text="@string/qinbuyao"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"

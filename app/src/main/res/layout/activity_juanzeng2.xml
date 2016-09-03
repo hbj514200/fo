@@ -67,7 +67,7 @@
         android:id="@+id/zhifubao_button"
         android:textSize="21sp"
         android:layout_width="wrap_content"
-        android:text="   捐 赠   "
+        android:text="   立即捐赠   "
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content" />
 
