@@ -22,7 +22,8 @@
             android:layout_marginRight="18dp"
             android:src="@drawable/setting_button"
             app:borderWidth="0dp"
-            app:elevation="8dp"
+            app:elevation="12dp"
+            android:padding="5dp"
             app:backgroundTint="#90a63a"
             app:pressedTranslationZ="20dp"
             android:layout_width="wrap_content"
@@ -37,8 +38,7 @@
 
         <ImageView
             android:id="@+id/main_zuo"
-            android:src="@drawable/main_zuo"
-            android:elevation="3dp"
+            android:src="@drawable/main_zuo_xml"
             android:layout_alignParentLeft="true"
             android:alpha="0.95"
             android:adjustViewBounds="true"
@@ -53,9 +53,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <ImageView
-            android:elevation="3dp"
+            android:elevation="8dp"
             android:id="@+id/main_you"
-            android:src="@drawable/main_you"
+            android:src="@drawable/main_you_xml"
             android:adjustViewBounds="true"
             android:padding="11dp"
             android:layout_alignParentRight="true"

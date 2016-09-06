@@ -1,18 +1,47 @@
 package com.qq.qzone.a133689237.fo;
 
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import net.youmi.android.normal.banner.BannerManager;
+import net.youmi.android.normal.spot.SpotManager;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
     private Fragment listFragement = null;
     private FragmentManager fm = null;
     private TextView text;
+    private LinearLayout adLayout = null;
+    private Timer timer = new Timer();
+    private int bannerflag = 0;
+    Handler myhandler = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message msg) {
+            if (msg.what == 1)  banner();
+            if (msg.what == 2){
+                SpotManager.getInstance(MainActivity.this).setSpotOrientation(SpotManager.ORIENTATION_PORTRAIT);
+                SpotManager.getInstance(MainActivity.this).setAnimationType(SpotManager.ANIM_ADVANCE);
+                SpotManager.getInstance(MainActivity.this).showSpotAds(MainActivity.this);
+            }
+            super.handleMessage(msg);
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.main_list_container, listFragement).commit();
 
         text = (TextView) findViewById(R.id.main_text);
+        double tem = Math.random()*10;
+        if ( tem<=2.5 ){
+            adLayout =(LinearLayout)findViewById(R.id.adLayout);
+            dinshiAD();
+        }
     }
 
     @Override
@@ -48,6 +82,43 @@ public class MainActivity extends AppCompatActivity {
         int index = (int) ( Math.random()*suiji.length - 1 );
         if(index < 0)   index = 1;
         text.setText(suiji[index]);
+    }
+
+    private void banner(){
+        bannerflag++;
+        if (bannerflag %10 ==0) {
+            if (text.getVisibility() == View.GONE && adLayout != null) {
+                adLayout.setVisibility(View.GONE);
+                text.setVisibility(View.VISIBLE);
+                suijitext();
+            } else {
+                text.setVisibility(View.GONE);
+                adLayout.setVisibility(View.VISIBLE);
+                View adView = BannerManager.getInstance(MainActivity.this).getBanner(MainActivity.this);
+                adLayout.removeAllViews();
+                adLayout.addView(adView);
+            }
+        }
+        if (bannerflag %20 ==1){
+            SpotManager.getInstance(MainActivity.this).setSpotOrientation(SpotManager.ORIENTATION_PORTRAIT);
+            SpotManager.getInstance(MainActivity.this).setAnimationType(SpotManager.ANIM_ADVANCE);
+            SpotManager.getInstance(MainActivity.this).showSpotAds(MainActivity.this);
+        }
+
+    }
+
+    private void dinshiAD() {
+        TimerTask task = new TimerTask() {
+            public void run() {
+                Message message1 = new Message();   message1.what = 1;
+                myhandler.sendMessage(message1);
+                if (Math.random()*10<1.5){
+                    Message message2 = new Message();   message2.what = 1;
+                    myhandler.sendMessage(message2);
+                }
+            }
+        };
+        timer.schedule(task, 60000, 30000);
     }
 
 }

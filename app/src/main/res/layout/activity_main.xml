@@ -17,8 +17,18 @@
         android:textColor="#CDCDCD"
         android:textSize="18sp"
         android:id="@+id/main_text"
+
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+    </LinearLayout>
 
 </LinearLayout>

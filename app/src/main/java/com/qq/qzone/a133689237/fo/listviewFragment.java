@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -41,8 +42,15 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         youButton = (ImageView) view.findViewById(R.id.main_you);
         zuoButton.setOnClickListener(this);
         youButton.setOnClickListener(this);
-        fabButton.setOnClickListener(this);
         foxiang.setOnClickListener(this);
+        fabButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN)
+                startActivity(new Intent(getActivity(), SettingsActivity.class));
+                return true;
+            }
+        });
 
         return view;
     }
@@ -99,11 +107,11 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
                 if (mMediaPlayer != null && old_position <= 3)
                     huan(old_position + 1);
                 break;
-            case R.id.main_fab_setting :
-                startActivity(new Intent(getActivity(), SettingsActivity.class));
-                break;
             case R.id.main_foxiang :
-                startActivity(new Intent(getActivity(), juanzengActivity.class));
+                //startActivity(new Intent(getActivity(), juanzengActivity.class));
+                Intent intent = new Intent(getActivity(), webActivity.class);
+                intent.putExtra("url", "http://www.qq.com");
+                startActivity(intent);
                 break;
             default:
                 break;

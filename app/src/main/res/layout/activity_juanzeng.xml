@@ -6,6 +6,7 @@
     android:orientation="vertical" >
 
     <ImageView
+        android:gravity="center_horizontal"
         android:layout_marginTop="-15dp"
         android:adjustViewBounds="true"
         android:src="@drawable/foxiang_press"
@@ -35,7 +36,7 @@
             android:id="@+id/zhifubao_button"
             android:textSize="21sp"
             android:layout_width="wrap_content"
-            android:text="  捐助有缘人  "
+            android:text="@string/juanzhuyouyuan"
             android:layout_height="wrap_content" />
 
 </LinearLayout>

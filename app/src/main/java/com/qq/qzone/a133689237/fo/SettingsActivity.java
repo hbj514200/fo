@@ -4,29 +4,35 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.PixelFormat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
+
+import net.youmi.android.normal.spot.SpotDialogListener;
+import net.youmi.android.normal.spot.SpotManager;
+import net.youmi.android.normal.video.VideoAdManager;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class SettingsActivity extends AppCompatActivity {
     private ListView mListView;
-    ArrayAdapter adapter;
-
     private Button juanButton;
-    private SharedPreferences pre;
-    private SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +40,14 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);
-        editor = pre.edit();
-        juanButton = (Button) findViewById(R.id.juanzeng_button);
         mListView = (ListView) findViewById(R.id.setting_listview);
-        juanButton.setOnClickListener(new View.OnClickListener() {
+        juanButton = (Button) findViewById(R.id.juanzeng_button);
+        juanButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SettingsActivity.this, juanzengActivity.class));
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction()==MotionEvent.ACTION_DOWN)
+                    startActivity(new Intent(SettingsActivity.this, juanzengActivity.class));
+                return true;
             }
         });
 
@@ -60,6 +66,9 @@ public class SettingsActivity extends AppCompatActivity {
         Map<String, String> keyValuePair4 = new HashMap<String, String>();
         keyValuePair4.put("name", getResources().getString(R.string.guanyuruanjian));
         keyValuePair4.put("shuomin", getResources().getString(R.string.shuomin4));
+        Map<String, String> keyValuePair5 = new HashMap<String, String>();
+        keyValuePair5.put("name", getResources().getString(R.string.guanyuzuozhe));
+        keyValuePair5.put("shuomin", getResources().getString(R.string.liaojie));
 
         List<Map<String, String>> list = new ArrayList<Map<String, String>>();
         list.add(keyValuePair0);
@@ -67,6 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
         list.add(keyValuePair2);
         list.add(keyValuePair3);
         list.add(keyValuePair4);
+        list.add(keyValuePair5);
         ListAdapter adapter = new SimpleAdapter(this, list,
                 R.layout.setting_list_item, new String[] { "name",
                 "shuomin" }, new int[] { R.id.text1,
@@ -91,6 +101,9 @@ public class SettingsActivity extends AppCompatActivity {
                     case 4 :
                         startActivity(new Intent(SettingsActivity.this, guanyuActivity.class));
                         break;
+                    case 5 :
+                        startActivity(new Intent(SettingsActivity.this, guanyuzuozhe.class));
+                        break;
                     default:
                         break;
                 }
@@ -110,6 +123,8 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void bofangmoshi(){
+        SharedPreferences pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);;
+        final SharedPreferences.Editor editor = pre.edit();
         final AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
         builder.setTitle(getResources().getString(R.string.qinxuanze));
         final String[] sex = {getResources().getString(R.string.danquxunhuan), getResources().getString(R.string.shunxvbofang)};

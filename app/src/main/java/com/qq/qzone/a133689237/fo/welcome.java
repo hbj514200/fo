@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.ImageView;
 import com.firebase.client.Firebase;
+import net.youmi.android.AdManager;
 
 public class welcome extends Activity {
 
@@ -17,12 +18,12 @@ public class welcome extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_welcome);
-        Firebase.setAndroidContext(this);
-
         mText = (ImageView) findViewById(R.id.welcome_text);
 
-        tiaozhuan();
         startAnimation();
+        tiaozhuan();
+        Firebase.setAndroidContext(this);
+        AdManager.getInstance(welcome.this).init("3ec6d67a552212e1", "5a9a483820d01818", true, true);
     }
 
     private void tiaozhuan(){
@@ -30,10 +31,13 @@ public class welcome extends Activity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(2700);
+                    Thread.sleep(2400);
                     startActivity(new Intent(welcome.this, jishuActivity.class));
                     finish();
-                } catch (Exception e){ }
+                } catch (Exception e){
+                    startActivity(new Intent(welcome.this, jishuActivity.class));
+                    finish();
+                }
             }
         }).start();
     }
@@ -43,8 +47,8 @@ public class welcome extends Activity {
         ObjectAnimator TeoveAnimator = ObjectAnimator
         .ofFloat(mText, "translationY", mText.getBottom()+50, mText.getBottom())
         .setDuration(1200);
-        ObjectAnimator TealpAnimator = ObjectAnimator.ofFloat(mText, "alpha", 0.1f, 1f)
-        .setDuration(1200);
+        ObjectAnimator TealpAnimator = ObjectAnimator.ofFloat(mText, "alpha", 0.3f, 1f)
+        .setDuration(1100);
 
         TeoveAnimator.start();
         TealpAnimator.start();
