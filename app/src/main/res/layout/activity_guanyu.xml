@@ -6,7 +6,7 @@
 
         <ImageView
             android:id="@+id/guanyu_image"
-            android:src="@drawable/jishu_3"
+            android:src="@drawable/banben"
             android:adjustViewBounds="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

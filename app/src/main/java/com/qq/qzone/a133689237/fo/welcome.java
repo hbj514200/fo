@@ -16,14 +16,11 @@ public class welcome extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_welcome);
         mText = (ImageView) findViewById(R.id.welcome_text);
 
-        startAnimation();
         tiaozhuan();
-        Firebase.setAndroidContext(this);
-        AdManager.getInstance(welcome.this).init("3ec6d67a552212e1", "5a9a483820d01818", true, true);
+        startAnimation();
     }
 
     private void tiaozhuan(){
@@ -31,7 +28,7 @@ public class welcome extends Activity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(2400);
+                    Thread.sleep(2500);
                     startActivity(new Intent(welcome.this, jishuActivity.class));
                     finish();
                 } catch (Exception e){
@@ -46,9 +43,9 @@ public class welcome extends Activity {
 
         ObjectAnimator TeoveAnimator = ObjectAnimator
         .ofFloat(mText, "translationY", mText.getBottom()+50, mText.getBottom())
-        .setDuration(1200);
+        .setDuration(1700);
         ObjectAnimator TealpAnimator = ObjectAnimator.ofFloat(mText, "alpha", 0.3f, 1f)
-        .setDuration(1100);
+        .setDuration(1700);
 
         TeoveAnimator.start();
         TealpAnimator.start();

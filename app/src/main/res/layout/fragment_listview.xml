@@ -50,7 +50,9 @@
             android:src="@drawable/main_foxiang"
             android:id="@+id/main_foxiang"
             android:layout_centerHorizontal="true"
-            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <ImageView
             android:elevation="8dp"

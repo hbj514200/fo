@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fo</string>
+    <string name="app_name">念佛</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -89,17 +89,23 @@
     <string name="tishi"> 提示 </string>
     <string name="qinan"> 请按要求输入内容。 </string>
     <string name="chongzhi"> 重置完毕 </string>
-    <string name="foyue1"> 1：星星眨着眼 </string>
-    <string name="foyue2"> 测试2号码 </string>
-    <string name="foyue3"> 测试3号码 </string>
-    <string name="foyue4"> 测试4号码 </string>
-    <string name="foyue5"> 测试5号码 </string>
-    <string name="foyue6"> 测试6号码 </string>
-    <string name="foyue7"> 测试7号码 </string>
-    <string name="foyue8"> 测试8号码 </string>
-    <string name="foyue9"> 测试9号码 </string>
-    <string name="foyue10"> 测试10号码 </string>
-    <string name="foyue11"> 测试11号码 </string>
+    <string name="foyue1"> 1：南无阿弥陀佛 </string>
+    <string name="foyue2"> 2：大悲咒 </string>
+    <string name="foyue3"> 3：大明咒 </string>
+    <string name="foyue4"> 4: 大悲十小咒  </string>
+    <string name="foyue5"> 5: 观世音菩萨圣号 </string>
+    <string name="foyue6"> 6：六字真言颂-六字断除六道苦难 </string>
+    <string name="foyue7"> 7：准提咒 </string>
+    <string name="foyue8"> 8: 长寿佛经 </string>
+    <string name="foyue9"> 9: 药师心咒 </string>
+    <string name="foyue10"> 10: 莲池赞 </string>
+    <string name="foyue11"> 11: 往生咒  </string>
+    <string name="foyue12"> 12: 悉发菩提心 </string>
+    <string name="foyue13"> 13: 楞严咒  </string>
+    <string name="foyue14"> 14: 万佛圣城梵呗 </string>
+    <string name="foyue15"> 15: 净土发愿文  </string>
+    <string name="foyue16"> 16: 赞佛偈  </string>
+    <string name="foyue17"> 17: 杨枝净水赞  </string>
     <string name="ninmeiyou"> 您没有安装支付宝客户端，请加微信，爱你们！ </string>
     <string name="feichang"> 非常感谢您的反馈，我会做得更好。 </string>
     <string name="ganxie"> 感谢！ </string>
@@ -139,7 +145,7 @@
     <string name="juanzeng1"> 五百年前结缘来，前生注定非今日\n短短今生一面遇，前世多少香火缘 </string>
     <string name="juan_button1">    捐助有缘人    </string>
     <string name="zhifuhaoma"> 支付宝：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
-    <string name="zhifushuomin"> 您可以通过下面的按钮进行支付宝捐赠，也可以加我微信，加我好友然后发我发一个小红包表示支持哦  (＾－＾)V\n弘扬佛法  功德无量  </string>
+    <string name="zhifushuomin"> 您可以通过下面的按钮进行支付宝捐赠，也可以加我微信，加我好友然后发我发一个小红包表示支持哦,  您的支持会让更多的人使用本软件念佛，(＾－＾)V\n弘扬佛法  功德无量  </string>
     <string name="zhufu"> 愿佛光注照全家，祈如意伴您永远，爱你们 </string>
     <string name="chuanbofoyue"> 传播佛乐  功德无量 </string>
     <string name="ninxiwang"> 您希望我们添加的曲目:  </string>
@@ -154,7 +160,7 @@
     <string name="lijijuanzeng"> &#160;&#160;立即支持&#160;&#160;  </string>
     <string name="guanyuzuozhe"> 关于作者  </string>
     <string name="liaojie"> 了解关于app的制作初衷  </string>
-    <string name="guanyuzuozhe1">曾经的我看见过许多的人为了念佛，购买了一种小小的叫做念佛机的东西。但甚为遗憾的是有许多的念佛机质量都不太好，很可能几个月甚至几周就坏了。同时它所包含的佛乐也很有限，可能还要去买那种7号电池使用，长期下来这也是一笔不小额外的开支且也对环境造成了一定的破坏。更让人尴尬的是传统的念佛机并没有显示屏换曲极为不便。同时它的普及率不高，中年人往往是没有的，但是手机却几乎人手一部。我现在只是一名学生，显然并没有什么能力去修桥铺路做大善事，某虽不才，但还能够勉强写这个app供大家使用，如果您愿意，可以在微信给我发个小红包对我的工作的表示支持哦，阿弥陀佛！很高兴认识你</string>
+    <string name="guanyuzuozhe1">曾经的我看见过许多的人为了念佛，购买了一种小小的叫做念佛机的东西。但甚为遗憾的是有许多的念佛机质量都不太好，很可能几个月甚至几周就坏了。同时它所包含的佛乐也很有限，可能还要去买那种7号电池使用，长期下来这也是一笔不小额外的开支且也对环境造成了一定的破坏。更让人尴尬的是传统的念佛机并没有显示屏换曲极为不便。同时它的普及率不高，中年人往往是没有的，但是手机却几乎人手一部。我现在只是一名学生，显然并没有什么能力去修桥铺路做大善事，某虽不才，但还能够勉强写这个app供大家使用，如果您愿意，可以在微信给我发个小红包对我的工作的表示支持哦，您的支持会让更多的人使用本软件念佛，功德无量。阿弥陀佛！很高兴认识你</string>
 
 
 </resources>

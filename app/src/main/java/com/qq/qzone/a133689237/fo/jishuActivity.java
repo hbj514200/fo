@@ -7,12 +7,17 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.firebase.client.Firebase;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+import net.youmi.android.AdManager;
 
 public class jishuActivity extends Activity {
 
     private ImageView image;
     private TextView tianshu;
     private SharedPreferences pre;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +30,13 @@ public class jishuActivity extends Activity {
         pre = getSharedPreferences("mydata", Activity.MODE_PRIVATE);
 
         suijiPicture();
-        tiaozhuan();
         String st = getResources().getString(R.string.ninyi) + " " + pre.getInt("tianshu",0)+ " "+getResources().getString(R.string.tian);
         tianshu.setText(st);
+
+        tiaozhuan();
+        Firebase.setAndroidContext(this);
+        AdManager.getInstance(jishuActivity.this).init("3ec6d67a552212e1", "5a9a483820d01818", true, true);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 
     private void tiaozhuan(){

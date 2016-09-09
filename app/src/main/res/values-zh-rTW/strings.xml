@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fo</string>
+    <string name="app_name">念佛</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -139,7 +139,7 @@
     <string name="juanzeng1"> 五百年前結緣來，前生注定非今日\n短短今生一面遇，前世多少香火緣 </string>
     <string name="juan_button1">    捐助有緣人    </string>
     <string name="zhifuhaoma"> 支付寶：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
-    <string name="zhifushuomin"> 您可以通過下面的按鈕進行支付寶捐贈，也可以加我微信，加我好友然後發我發一個小紅包表示支持哦  (＾－＾)V\n弘揚佛法  功德無量  </string>
+    <string name="zhifushuomin"> 您可以通過下面的按鈕進行支付寶捐贈，也可以加我微信，加我好友然後發我發一個小紅包表示支持哦  您的支持會讓更多的人使用本軟件念佛，(＾－＾)V\n弘揚佛法  功德無量  </string>
     <string name="zhufu"> 願佛光注照全家，祈如意伴您永遠，愛你們 </string>
     <string name="chuanbofoyue"> 傳播佛樂  功德無量 </string>
     <string name="ninxiwang"> 您希望我們添加的曲目:  </string>
@@ -154,7 +154,7 @@
     <string name="lijijuanzeng"> &#160;&#160;立即支持&#160;&#160;  </string>
     <string name="guanyuzuozhe"> 關于作者  </string>
     <string name="liaojie"> 了解關于app的制作初衷  </string>
-    <string name="guanyuzuozhe1">曾經的我看見過許多的人爲了念佛，購買了一種小小的叫做念佛機的東西。但甚爲遺憾的是有許多的念佛機質量都不太好，很可能幾個月甚至幾周就壞了。同時它所包含的佛樂也很有限，可能還要去買那種7號電池使用，長期下來這也是一筆不小額外的開支且也對環境造成了一定的破壞。更讓人尴尬的是傳統的念佛機並沒有顯示屏換曲極爲不便。同時它的普及率不高，中年人往往是沒有的，但是手機卻幾乎人手一部。我現在只是一名學生，顯然並沒有什麽能力去修橋鋪路做大善事，某雖不才，但還能夠勉強寫這個app供大家使用，如果您願意，可以在微信給我發個小紅包對我的工作的表示支持哦，阿彌陀佛！很高興認識你</string>
+    <string name="guanyuzuozhe1">曾經的我看見過許多的人爲了念佛，購買了一種小小的叫做念佛機的東西。但甚爲遺憾的是有許多的念佛機質量都不太好，很可能幾個月甚至幾周就壞了。同時它所包含的佛樂也很有限，可能還要去買那種7號電池使用，長期下來這也是一筆不小額外的開支且也對環境造成了一定的破壞。更讓人尴尬的是傳統的念佛機並沒有顯示屏換曲極爲不便。同時它的普及率不高，中年人往往是沒有的，但是手機卻幾乎人手一部。我現在只是一名學生，顯然並沒有什麽能力去修橋鋪路做大善事，某雖不才，但還能夠勉強寫這個app供大家使用，如果您願意，可以在微信給我發個小紅包對我的工作的表示支持哦，您的支持會讓更多的人使用本軟件念佛，您的支持會讓更多的人使用本軟件念佛字按鈕進行在線轉換, 功德無量。阿彌陀佛！很高興認識你</string>
 
 
 </resources>
