@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.ListView;
+
 import java.util.List;
 
 public class listviewFragment extends Fragment implements AdapterView.OnItemClickListener, View.OnClickListener{
@@ -62,7 +63,7 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         int tem = old_position;
-        old_position = 300;
+        old_position = -1;
         adapter.notifyDataSetChanged();
         old_position = tem;
         CheckedTextView textView = (CheckedTextView) view.findViewById(R.id.text_checked);
@@ -71,14 +72,14 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
     }
 
     private void huan(int position){
-        if(position > 16)   {   huan(0); return;  }
+        if(position > 16 || position <0)   {   huan(0); return;  }
         if(mMediaPlayer == null){
                 mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
                 mMediaPlayer.start();
         }
         else {
             if(position != old_position){
-                    mMediaPlayer.release();
+                    if (mMediaPlayer.isPlaying())   mMediaPlayer.stop();
                     mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
                     mMediaPlayer.start();
             }
@@ -89,11 +90,6 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         }
         old_position = position;
         bofangmoshi();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
     }
 
     @Override

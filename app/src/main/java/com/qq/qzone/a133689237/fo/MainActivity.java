@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import net.youmi.android.normal.banner.BannerManager;
 import net.youmi.android.normal.spot.SpotManager;
 import java.util.Timer;
@@ -25,12 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Handler myhandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
-            if (msg.what == 1)  banner();
-            if (msg.what == 2){
-                SpotManager.getInstance(MainActivity.this).setSpotOrientation(SpotManager.ORIENTATION_PORTRAIT);
-                SpotManager.getInstance(MainActivity.this).setAnimationType(SpotManager.ANIM_ADVANCE);
-                SpotManager.getInstance(MainActivity.this).showSpotAds(MainActivity.this);
-            }
+            banner();
             super.handleMessage(msg);
         }
     };
@@ -46,11 +42,8 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.main_list_container, listFragement).commit();
 
         text = (TextView) findViewById(R.id.main_text);
-        double tem = Math.random()*10;
-        if ( tem<=2.5 ){
-            adLayout =(LinearLayout)findViewById(R.id.adLayout);
-            dinshiAD();
-        }
+        adLayout =(LinearLayout)findViewById(R.id.adLayout);
+        dinshiAD();
     }
 
     @Override
@@ -78,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void banner(){
         bannerflag++;
-            if (text.getVisibility() == View.VISIBLE && bannerflag%10==0) {
+            if (bannerflag%10==4) {
                 text.setVisibility(View.GONE);
                 adLayout.setVisibility(View.VISIBLE);
                 View adView = BannerManager.getInstance(MainActivity.this).getBanner(MainActivity.this);
@@ -89,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 text.setVisibility(View.VISIBLE);
                 suijitext();
             }
-        if (Math.random()*10<=3 || bannerflag == 1){
+        if ((Math.random()*10<=3&&bannerflag%15==0) || bannerflag == 1){
             SpotManager.getInstance(MainActivity.this).setSpotOrientation(SpotManager.ORIENTATION_PORTRAIT);
             SpotManager.getInstance(MainActivity.this).setAnimationType(SpotManager.ANIM_ADVANCE);
             SpotManager.getInstance(MainActivity.this).showSpotAds(MainActivity.this);
@@ -100,15 +93,10 @@ public class MainActivity extends AppCompatActivity {
     private void dinshiAD() {
         TimerTask task = new TimerTask() {
             public void run() {
-                Message message1 = new Message();   message1.what = 1;
-                myhandler.sendMessage(message1);
-                if (bannerflag %10 == 1){
-                    Message message2 = new Message();   message2.what = 1;
-                    myhandler.sendMessage(message2);
-                }
+                myhandler.sendMessage( new Message() );
             }
         };
-        timer.schedule(task, 60000, 30000);
+        timer.schedule(task, 30000, 30000);
     }
 
 }

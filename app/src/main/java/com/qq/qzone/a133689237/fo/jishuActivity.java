@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.firebase.client.Firebase;
 import com.google.firebase.analytics.FirebaseAnalytics;
-
 import net.youmi.android.AdManager;
 
 public class jishuActivity extends Activity {
