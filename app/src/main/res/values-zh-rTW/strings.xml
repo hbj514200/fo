@@ -113,6 +113,7 @@
     <string name="foyue22"> 22: 般若波羅密多心經 </string>
     <string name="foyue23"> 23: 心陀羅尼經大悲神咒 </string>
     <string name="ninmeiyou"> 打開paypal.me失敗，請直接paypal付款謝謝，愛妳們！ </string>
+    <string name="ninmeiyouzhi"> 您沒有支付寶客戶端，妳可以加我的微信謝謝，愛妳們！ </string>
     <string name="feichang"> 非常感謝您的反饋，我會做得更好。 </string>
     <string name="ganxie"> 感謝！ </string>
     <string name="qinanyaoqiu"> 請按要求輸入內容。 </string>
@@ -150,8 +151,8 @@
     <string name="banben">  念佛 Ver 1.0 </string>
     <string name="juanzeng1"> 五百年前結緣來，前生註定非今日\n短短今生壹面遇，前世多少香火緣 </string>
     <string name="juan_button1">    捐助有緣人    </string>
-    <string name="zhifuhaoma"> paypal：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
-    <string name="zhifushuomin"> 您可以通過下面的按鈕進行paypal捐贈，也可以加我微信，加我好友然後發我發壹個小紅包表示支持哦, 或者支付寶也是上面的郵箱賬號， 您的支持會讓更多的人使用本軟件念佛，(＾－＾)V\n弘揚佛法  功德無量  </string>
+    <string name="zhifuhaoma"> Paypal：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
+    <string name="zhifushuomin"> 您可以通過下面的按鈕進行PayPal捐贈，也可以加我微信，加我好友然後發我發壹個小紅包表示支持哦, 或者支付寶也是上面的郵箱賬號， 您的支持會讓更多的人使用本軟件念佛，(＾－＾)V\n弘揚佛法  功德無量  </string>
     <string name="zhufu"> 願佛光註照全家，祈如意伴您永遠，愛妳們 </string>
     <string name="chuanbofoyue"> 傳播佛樂  功德無量 </string>
     <string name="ninxiwang"> 您希望我們添加的曲目:  </string>
@@ -163,7 +164,9 @@
     <string name="qinbuyao"> 該功能僅僅用於更換手機或重裝軟件後造成數據丟失後的恢復手段，請根據自己的實際天數修改，誠心修行，阿彌陀佛！ </string>
     <string name="juanzeng"> &#160;&#160;&#160;捐贈有緣人&#160;&#160;&#160; </string>
     <string name="juanzhuyouyuan"> &#160;&#160;&#160;捐助有緣人&#160;&#160;&#160;  </string>
-    <string name="lijijuanzeng"> &#160;&#160;立即支持&#160;&#160;  </string>
+    <string name="lijijuanzeng"> &#160;&#160;PayPal&#160;&#160;  </string>
+    <string name="zhichi">立即支持</string>
+    <string name="zhifubao"> &#160;&#160;支付寶&#160;&#160; </string>
     <string name="guanyuzuozhe"> 關於作者  </string>
     <string name="liaojie"> 了解關於app的制作初衷  </string>
     <string name="guanyuzuozhe1">曾經的我看見過許多的人為了念佛，購買了壹種小小的叫做念佛機的東西。但甚為遺憾的是有許多的念佛機質量都不太好，很可能幾個月甚至幾周就壞了。同時它所包含的佛樂也很有限，可能還要去買那種7號電池使用，長期下來這也是壹筆不小額外的開支且也對環境造成了壹定的破壞。更讓人尷尬的是傳統的念佛機並沒有顯示屏換曲極為不便。同時它的普及率不高，中年人往往是沒有的，但是手機卻幾乎人手壹部。我現在只是壹名學生，顯然並沒有什麽能力去修橋鋪路做大善事，某雖不才，但還能夠勉強寫這個app供大家使用，如果您願意，可以在微信給我發個小紅包對我的工作的表示支持哦，您的支持會讓更多的人使用本軟件念佛，功德無量。阿彌陀佛！很高興認識妳</string>

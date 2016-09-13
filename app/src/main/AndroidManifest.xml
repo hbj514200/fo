@@ -63,6 +63,9 @@
             android:name=".juanzengActivity"
             android:screenOrientation="portrait"
             android:theme="@style/juanStyle" />
+        <activity
+            android:name=".guanyuzuozhe"
+            android:screenOrientation="portrait" />
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />

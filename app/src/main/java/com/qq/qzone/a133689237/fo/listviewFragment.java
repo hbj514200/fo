@@ -120,7 +120,6 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
                 break;
             case R.id.main_foxiang :
                 startActivity(new Intent(getActivity(), juanzengActivity.class));
-                ((MainActivity)getActivity()).banner();
                 break;
             default:
                 break;

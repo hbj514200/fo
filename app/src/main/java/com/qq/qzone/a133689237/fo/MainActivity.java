@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             bannerflag = 1;
-            Toast.makeText(MainActivity.this, "bannerflag = 1", Toast.LENGTH_LONG).show();
             super.handleMessage(msg);
         }
     };
@@ -73,9 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void banner(){
         if (bannerflag==1){
-            if (mInterstitialAd.isLoaded())     mInterstitialAd.show();
-            Toast.makeText(MainActivity.this, "banner方法: bannerflag=="+bannerflag, Toast.LENGTH_LONG).show();
-            bannerflag = 0;
+            if (mInterstitialAd.isLoaded()){
+                mInterstitialAd.show();
+                bannerflag = 0;
+            }
         }
     }
 
@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("SEE_YOUR_LOGCAT_TO_GET_YOUR_DEVICE_ID")
                 .build();
         mInterstitialAd.loadAd(adRequest);
     }

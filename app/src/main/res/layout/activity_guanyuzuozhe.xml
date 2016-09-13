@@ -59,7 +59,7 @@
         android:id="@+id/guanyuzuozhe_button"
         android:textSize="21sp"
         android:layout_width="wrap_content"
-        android:text="@string/lijijuanzeng"
+        android:text="@string/zhichi"
         android:layout_marginBottom="20dp"
         android:layout_height="wrap_content" />
 
