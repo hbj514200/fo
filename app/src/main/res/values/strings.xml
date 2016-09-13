@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">念佛</string>
+    <string name="app_name">念佛机</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -106,6 +106,12 @@
     <string name="foyue15"> 15: 净土发愿文  </string>
     <string name="foyue16"> 16: 赞佛偈  </string>
     <string name="foyue17"> 17: 杨枝净水赞  </string>
+    <string name="foyue18"> 18: 释迦牟尼佛心咒 </string>
+    <string name="foyue19"> 19: 阿弥陀佛心咒 </string>
+    <string name="foyue20"> 20: 文殊菩萨心咒</string>
+    <string name="foyue21"> 21: 金刚萨埵心咒 </string>
+    <string name="foyue22"> 22: 般若波罗密多心经 </string>
+    <string name="foyue23"> 23: 心陀罗尼经大悲神咒 </string>
     <string name="ninmeiyou"> 您没有安装支付宝客户端，请加微信，爱你们！ </string>
     <string name="feichang"> 非常感谢您的反馈，我会做得更好。 </string>
     <string name="ganxie"> 感谢！ </string>

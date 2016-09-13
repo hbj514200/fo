@@ -17,7 +17,6 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.ListView;
-
 import java.util.List;
 
 public class listviewFragment extends Fragment implements AdapterView.OnItemClickListener, View.OnClickListener{
@@ -72,7 +71,7 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
     }
 
     private void huan(int position){
-        if(position > 16 || position <0)   {   huan(0); return;  }
+        if(position > 22 || position <0)   {   huan(0); return;  }
         if(mMediaPlayer == null){
                 mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
                 mMediaPlayer.start();
@@ -80,6 +79,8 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         else {
             if(position != old_position){
                     if (mMediaPlayer.isPlaying())   mMediaPlayer.stop();
+                    if (mMediaPlayer != null)       mMediaPlayer.release();
+                    mMediaPlayer = new MediaPlayer();
                     mMediaPlayer = MediaPlayer.create(getActivity(), class_music.getId(position));
                     mMediaPlayer.start();
             }
@@ -109,7 +110,7 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
                 }
                 break;
             case R.id.main_you :
-                if (mMediaPlayer != null && old_position < 17-1){
+                if (mMediaPlayer != null && old_position < 23-1){
                     huan(old_position + 1);
                     adapter.notifyDataSetChanged();
                 }
@@ -157,19 +158,20 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
 
     public class myadapter extends ArrayAdapter<String> {
         int resouId;
-        public myadapter(Context context, int textId, List<String> object){
+
+        public myadapter(Context context, int textId, List<String> object) {
             super(context, textId, object);
             resouId = textId;
         }
+
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View view = LayoutInflater.from(getContext()).inflate(resouId, null);
             CheckedTextView checktext = (CheckedTextView) view.findViewById(R.id.text_checked);
-            checktext.setText( getItem(position) );
-            if (position == old_position)       checktext.setChecked(true);
+            checktext.setText(getItem(position));
+            if (position == old_position) checktext.setChecked(true);
             return view;
         }
     }
-
 
 }

@@ -26,6 +26,12 @@ public class class_music {
         st.add(context.getString(R.string.foyue15));
         st.add(context.getString(R.string.foyue16));
         st.add(context.getString(R.string.foyue17));
+        st.add(context.getString(R.string.foyue18));
+        st.add(context.getString(R.string.foyue19));
+        st.add(context.getString(R.string.foyue20));
+        st.add(context.getString(R.string.foyue21));
+        st.add(context.getString(R.string.foyue22));
+        st.add(context.getString(R.string.foyue23));
         return st;
     }
 
@@ -47,7 +53,13 @@ public class class_music {
           R.raw.wanfo14,
           R.raw.jintu15,
           R.raw.zanfohe16,
-          R.raw.yangzhi17
+          R.raw.yangzhi17,
+          R.raw.shijia18,
+          R.raw.erni19,
+          R.raw.wenshu20,
+          R.raw.jingang21,
+          R.raw.banruo22,
+          R.raw.xintuo23
         };
         return biaobao[postion];
     }

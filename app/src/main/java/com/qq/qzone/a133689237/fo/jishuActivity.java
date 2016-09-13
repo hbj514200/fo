@@ -34,7 +34,7 @@ public class jishuActivity extends Activity {
 
         tiaozhuan();
         Firebase.setAndroidContext(this);
-        AdManager.getInstance(jishuActivity.this).init("3ec6d67a552212e1", "5a9a483820d01818", true, true);
+        AdManager.getInstance(jishuActivity.this).init("3ec6d67a552212e1", "5a9a483820d01818", false, false);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 

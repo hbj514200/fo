@@ -71,18 +71,18 @@ public class MainActivity extends AppCompatActivity {
 
     private void banner(){
         bannerflag++;
-            if (bannerflag%10==4) {
-                text.setVisibility(View.GONE);
-                adLayout.setVisibility(View.VISIBLE);
+            if (bannerflag%12==3) {
                 View adView = BannerManager.getInstance(MainActivity.this).getBanner(MainActivity.this);
                 adLayout.removeAllViews();
                 adLayout.addView(adView);
+                text.setVisibility(View.GONE);
+                adLayout.setVisibility(View.VISIBLE);
             } else {
                 adLayout.setVisibility(View.GONE);
                 text.setVisibility(View.VISIBLE);
                 suijitext();
             }
-        if ((Math.random()*10<=3&&bannerflag%15==0) || bannerflag == 1){
+        if ((Math.random()*10<=3&&bannerflag%10==0) || bannerflag == 2){
             SpotManager.getInstance(MainActivity.this).setSpotOrientation(SpotManager.ORIENTATION_PORTRAIT);
             SpotManager.getInstance(MainActivity.this).setAnimationType(SpotManager.ANIM_ADVANCE);
             SpotManager.getInstance(MainActivity.this).showSpotAds(MainActivity.this);
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 myhandler.sendMessage( new Message() );
             }
         };
-        timer.schedule(task, 30000, 30000);
+        timer.schedule(task, 20000, 30000);
     }
 
 }
