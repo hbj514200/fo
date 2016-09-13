@@ -112,7 +112,7 @@
     <string name="foyue21"> 21: 金刚萨埵心咒 </string>
     <string name="foyue22"> 22: 般若波罗密多心经 </string>
     <string name="foyue23"> 23: 心陀罗尼经大悲神咒 </string>
-    <string name="ninmeiyou"> 您没有安装支付宝客户端，请加微信，爱你们！ </string>
+    <string name="ninmeiyou"> 打开paypal.me失败，请直接paypal付款谢谢，爱你们！ </string>
     <string name="feichang"> 非常感谢您的反馈，我会做得更好。 </string>
     <string name="ganxie"> 感谢！ </string>
     <string name="qinanyaoqiu"> 请按要求输入内容。 </string>
@@ -150,8 +150,8 @@
     <string name="banben">  念佛 Ver 1.0 </string>
     <string name="juanzeng1"> 五百年前结缘来，前生注定非今日\n短短今生一面遇，前世多少香火缘 </string>
     <string name="juan_button1">    捐助有缘人    </string>
-    <string name="zhifuhaoma"> 支付宝：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
-    <string name="zhifushuomin"> 您可以通过下面的按钮进行支付宝捐赠，也可以加我微信，加我好友然后发我发一个小红包表示支持哦,  您的支持会让更多的人使用本软件念佛，(＾－＾)V\n弘扬佛法  功德无量  </string>
+    <string name="zhifuhaoma"> paypal：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
+    <string name="zhifushuomin"> 您可以通过下面的按钮进行paypal捐赠，也可以加我微信，加我好友然后发我发一个小红包表示支持哦, 或者支付宝也是上面的邮箱账号， 您的支持会让更多的人使用本软件念佛，(＾－＾)V\n弘扬佛法  功德无量  </string>
     <string name="zhufu"> 愿佛光注照全家，祈如意伴您永远，爱你们 </string>
     <string name="chuanbofoyue"> 传播佛乐  功德无量 </string>
     <string name="ninxiwang"> 您希望我们添加的曲目:  </string>

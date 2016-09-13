@@ -81,7 +81,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="zhuyi"> 注意 </string>
+
+    <string name="zhuyi"> 註意 </string>
     <string name="zhezhen"> 真的要修改嗎？ </string>
     <string name="hao"> 好 </string>
     <string name="quxiao"> 取消 </string>
@@ -111,33 +112,33 @@
     <string name="foyue21"> 21: 金剛薩埵心咒 </string>
     <string name="foyue22"> 22: 般若波羅密多心經 </string>
     <string name="foyue23"> 23: 心陀羅尼經大悲神咒 </string>
-    <string name="ninmeiyou"> 您沒有安裝支付寶客戶端，請加微信，愛你們！ </string>
+    <string name="ninmeiyou"> 打開paypal.me失敗，請直接paypal付款謝謝，愛妳們！ </string>
     <string name="feichang"> 非常感謝您的反饋，我會做得更好。 </string>
     <string name="ganxie"> 感謝！ </string>
     <string name="qinanyaoqiu"> 請按要求輸入內容。 </string>
     <string name="foyueyouyang"> 佛樂悠揚 </string>
-    <string name="ninyi"> 您已于此誦佛  </string>
+    <string name="ninyi"> 您已於此誦佛  </string>
     <string name="tian"> 天 </string>
-    <string name="maindi_1"> 菩提本無樹，明鏡亦非台 </string>
-    <string name="maindi_2"> 一花一世界，一佛一如來 </string>
+    <string name="maindi_1"> 菩提本無樹，明鏡亦非臺 </string>
+    <string name="maindi_2"> 壹花壹世界，壹佛壹如來 </string>
     <string name="maindi_3"> 大悲無淚，大悟無言，大笑無聲 </string>
     <string name="maindi_4"> 若欲求佛但求心，只這心心心是佛 </string>
-    <string name="maindi_5"> 一念之慈，萬物皆善 </string>
-    <string name="maindi_6"> 一念愚即般若絕，一念智即般若生 </string>
-    <string name="maindi_7"> 坐亦禅，行亦禅 </string>
+    <string name="maindi_5"> 壹念之慈，萬物皆善 </string>
+    <string name="maindi_6"> 壹念愚即般若絕，壹念智即般若生 </string>
+    <string name="maindi_7"> 坐亦禪，行亦禪 </string>
     <string name="maindi_8"> 誰將煙焚散，散了縱橫的牽絆 </string>
     <string name="maindi_9"> 人生的真理，只是藏在平淡無味之中 </string>
     <string name="ganxiefankui"> 非常感謝您的反饋，我會做得更好。 </string>
     <string name="bofangmoshi"> 播放模式 </string>
     <string name="shuomin1"> 單曲循環 順序播放 </string>
-    <string name="chongzhitianshu"> 恢複天數 </string>
+    <string name="chongzhitianshu"> 恢復天數 </string>
     <string name="shuomin2"> 重新設定念佛天數 </string>
     <string name="yijianfankui"> 意見反饋 </string>
     <string name="ganxieninti"> 提供您寶貴的建議，幫助我做的更好 </string>
     <string name="tuijianqumu"> 推薦曲目 </string>
     <string name="shuomin3"> 給我們推薦您想要添加的曲目 </string>
     <string name="guanyuruanjian"> 軟件信息 </string>
-    <string name="shuomin4"> 查看關于app版本等信息 </string>
+    <string name="shuomin4"> 查看關於app版本等信息 </string>
     <string name="quedin"> 確定 </string>
     <string name="danquxunhuan"> 單曲循環 </string>
     <string name="shunxvbofang"> 順序播放 </string>
@@ -147,25 +148,25 @@
     <string name="tijiao"> 提交 </string>
     <string name="ganxieninde"> 感謝您的寶貴建議, 您也可以留下聯系方式 </string>
     <string name="banben">  念佛 Ver 1.0 </string>
-    <string name="juanzeng1"> 五百年前結緣來，前生注定非今日\n短短今生一面遇，前世多少香火緣 </string>
+    <string name="juanzeng1"> 五百年前結緣來，前生註定非今日\n短短今生壹面遇，前世多少香火緣 </string>
     <string name="juan_button1">    捐助有緣人    </string>
-    <string name="zhifuhaoma"> 支付寶：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
-    <string name="zhifushuomin"> 您可以通過下面的按鈕進行支付寶捐贈，也可以加我微信，加我好友然後發我發一個小紅包表示支持哦  您的支持會讓更多的人使用本軟件念佛，(＾－＾)V\n弘揚佛法  功德無量  </string>
-    <string name="zhufu"> 願佛光注照全家，祈如意伴您永遠，愛你們 </string>
+    <string name="zhifuhaoma"> paypal：133 689 2373 @qq.com\n微   信：H 133 689 2373 </string>
+    <string name="zhifushuomin"> 您可以通過下面的按鈕進行paypal捐贈，也可以加我微信，加我好友然後發我發壹個小紅包表示支持哦, 或者支付寶也是上面的郵箱賬號， 您的支持會讓更多的人使用本軟件念佛，(＾－＾)V\n弘揚佛法  功德無量  </string>
+    <string name="zhufu"> 願佛光註照全家，祈如意伴您永遠，愛妳們 </string>
     <string name="chuanbofoyue"> 傳播佛樂  功德無量 </string>
     <string name="ninxiwang"> 您希望我們添加的曲目:  </string>
     <string name="shezhi">  設置 </string>
     <string name="tianshushedin"> 天數設定  </string>
-    <string name="foxinchanwen">  佛心禅聞 </string>
+    <string name="foxinchanwen">  佛心禪聞 </string>
     <string name="ruanjianxinxi"> 軟件信息  </string>
-    <string name="chongzhianniu"> 恢複  </string>
-    <string name="qinbuyao"> 該功能僅僅用于更換手機或重裝軟件後造成數據丟失後的恢複手段，請根據自己的實際天數修改，誠心修行，阿彌陀佛！ </string>
+    <string name="chongzhianniu"> 恢復  </string>
+    <string name="qinbuyao"> 該功能僅僅用於更換手機或重裝軟件後造成數據丟失後的恢復手段，請根據自己的實際天數修改，誠心修行，阿彌陀佛！ </string>
     <string name="juanzeng"> &#160;&#160;&#160;捐贈有緣人&#160;&#160;&#160; </string>
     <string name="juanzhuyouyuan"> &#160;&#160;&#160;捐助有緣人&#160;&#160;&#160;  </string>
     <string name="lijijuanzeng"> &#160;&#160;立即支持&#160;&#160;  </string>
-    <string name="guanyuzuozhe"> 關于作者  </string>
-    <string name="liaojie"> 了解關于app的制作初衷  </string>
-    <string name="guanyuzuozhe1">曾經的我看見過許多的人爲了念佛，購買了一種小小的叫做念佛機的東西。但甚爲遺憾的是有許多的念佛機質量都不太好，很可能幾個月甚至幾周就壞了。同時它所包含的佛樂也很有限，可能還要去買那種7號電池使用，長期下來這也是一筆不小額外的開支且也對環境造成了一定的破壞。更讓人尴尬的是傳統的念佛機並沒有顯示屏換曲極爲不便。同時它的普及率不高，中年人往往是沒有的，但是手機卻幾乎人手一部。我現在只是一名學生，顯然並沒有什麽能力去修橋鋪路做大善事，某雖不才，但還能夠勉強寫這個app供大家使用，如果您願意，可以在微信給我發個小紅包對我的工作的表示支持哦，您的支持會讓更多的人使用本軟件念佛，功德無量。阿彌陀佛！很高興認識你</string>
+    <string name="guanyuzuozhe"> 關於作者  </string>
+    <string name="liaojie"> 了解關於app的制作初衷  </string>
+    <string name="guanyuzuozhe1">曾經的我看見過許多的人為了念佛，購買了壹種小小的叫做念佛機的東西。但甚為遺憾的是有許多的念佛機質量都不太好，很可能幾個月甚至幾周就壞了。同時它所包含的佛樂也很有限，可能還要去買那種7號電池使用，長期下來這也是壹筆不小額外的開支且也對環境造成了壹定的破壞。更讓人尷尬的是傳統的念佛機並沒有顯示屏換曲極為不便。同時它的普及率不高，中年人往往是沒有的，但是手機卻幾乎人手壹部。我現在只是壹名學生，顯然並沒有什麽能力去修橋鋪路做大善事，某雖不才，但還能夠勉強寫這個app供大家使用，如果您願意，可以在微信給我發個小紅包對我的工作的表示支持哦，您的支持會讓更多的人使用本軟件念佛，功德無量。阿彌陀佛！很高興認識妳</string>
 
 
 </resources>
