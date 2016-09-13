@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.firebase.client.Firebase;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import net.youmi.android.AdManager;
 
 public class jishuActivity extends Activity {
 
@@ -34,7 +33,6 @@ public class jishuActivity extends Activity {
 
         tiaozhuan();
         Firebase.setAndroidContext(this);
-        AdManager.getInstance(jishuActivity.this).init("3ec6d67a552212e1", "5a9a483820d01818", false, false);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 
