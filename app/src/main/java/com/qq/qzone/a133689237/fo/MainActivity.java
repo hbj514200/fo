@@ -10,13 +10,10 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     private Fragment listFragement = null;
@@ -29,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     Handler myhandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
-            banner();
+            bannerflag = 1;
+            Toast.makeText(MainActivity.this, "bannerflag = 1", Toast.LENGTH_LONG).show();
             super.handleMessage(msg);
         }
     };
@@ -73,23 +71,31 @@ public class MainActivity extends AppCompatActivity {
         text.setText(suiji[index]);
     }
 
-    private void banner(){
-        bannerflag++;
-        //if ((Math.random()*10<=3&&bannerflag%10==0) || bannerflag == 1){
-        {
+    public void banner(){
+        if (bannerflag==1){
             if (mInterstitialAd.isLoaded())     mInterstitialAd.show();
-            Toast.makeText(MainActivity.this, "ads here", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "banner方法: bannerflag=="+bannerflag, Toast.LENGTH_LONG).show();
+            bannerflag = 0;
         }
-
     }
 
     private void dinshiAD() {
-        TimerTask task = new TimerTask() {
+        new Thread(new Runnable() {
+            @Override
             public void run() {
-                myhandler.sendMessage( new Message() );
+                try { Thread.sleep(40000); } catch (Exception e) { }
+                myhandler.sendMessage(new Message() );
+                try { Thread.sleep(300000); } catch (Exception e) { }
+                myhandler.sendMessage(new Message() );
+                try { Thread.sleep(300000); } catch (Exception e) { }
+                myhandler.sendMessage(new Message() );
+                try { Thread.sleep(300000); } catch (Exception e) { }
+                myhandler.sendMessage(new Message() );
+                try { Thread.sleep(300000); } catch (Exception e) { }
+                myhandler.sendMessage(new Message() );
             }
-        };
-        timer.schedule(task, 5000, 20000);
+        }).start();
+
     }
 
     private void requestNewInterstitial() {

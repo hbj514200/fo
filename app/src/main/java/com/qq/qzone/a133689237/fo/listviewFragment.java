@@ -68,6 +68,7 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
         CheckedTextView textView = (CheckedTextView) view.findViewById(R.id.text_checked);
         textView.setChecked(true);
         huan(position);
+        ((MainActivity)getActivity()).banner();
     }
 
     private void huan(int position){
@@ -107,16 +108,19 @@ public class listviewFragment extends Fragment implements AdapterView.OnItemClic
                 if (mMediaPlayer != null && old_position >= 1){
                     huan(old_position - 1);
                     adapter.notifyDataSetChanged();
+                    ((MainActivity)getActivity()).banner();
                 }
                 break;
             case R.id.main_you :
                 if (mMediaPlayer != null && old_position < 23-1){
                     huan(old_position + 1);
                     adapter.notifyDataSetChanged();
+                    ((MainActivity)getActivity()).banner();
                 }
                 break;
             case R.id.main_foxiang :
                 startActivity(new Intent(getActivity(), juanzengActivity.class));
+                ((MainActivity)getActivity()).banner();
                 break;
             default:
                 break;
