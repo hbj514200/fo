@@ -112,6 +112,12 @@
     <string name="foyue21"> 21: 金刚萨埵心咒 </string>
     <string name="foyue22"> 22: 般若波罗密多心经 </string>
     <string name="foyue23"> 23: 心陀罗尼经大悲神咒 </string>
+    <string name="foyue24">24: 心经</string>
+    <string name="foyue25">25: 念佛静心曲</string>
+    <string name="foyue26">26: 财神咒</string>
+    <string name="foyue27">27: 绿度母心咒</string>
+    <string name="foyue28">28: 佛顶尊胜佛母心咒</string>
+    <string name="foyue29">29: 南无大愿地藏王菩萨</string>
     <string name="ninmeiyou"> 打开paypal.me失败，请直接paypal付款谢谢，爱你们！ </string>
     <string name="ninmeiyouzhi"> 您没有支付宝客户端，你可以加我的微信谢谢，爱你们！ </string>
     <string name="feichang"> 非常感谢您的反馈，我会做得更好。 </string>
@@ -170,6 +176,24 @@
     <string name="guanyuzuozhe"> 关于作者  </string>
     <string name="liaojie"> 了解关于app的制作初衷  </string>
     <string name="guanyuzuozhe1">曾经的我看见过许多的人为了念佛，购买了一种小小的叫做念佛机的东西。但甚为遗憾的是有许多的念佛机质量都不太好，很可能几个月甚至几周就坏了。同时它所包含的佛乐也很有限，可能还要去买那种7号电池使用，长期下来这也是一笔不小额外的开支且也对环境造成了一定的破坏。更让人尴尬的是传统的念佛机并没有显示屏换曲极为不便。同时它的普及率不高，中年人往往是没有的，但是手机却几乎人手一部。我现在只是一名学生，显然并没有什么能力去修桥铺路做大善事，某虽不才，但还能够勉强写这个app供大家使用，如果您愿意，可以在微信给我发个小红包对我的工作的表示支持哦，您的支持会让更多的人使用本软件念佛，功德无量。阿弥陀佛！很高兴认识你</string>
+    <string name="foyoujiaoli">佛友交流</string>
+    <string name="dinshiguanbi">定时关闭</string>
+    <string name="xuanzeguanbi">选择关闭时间</string>
+    <string name="qinshuru">请输入您的昵称</string>
+    <string name="fenxiangwude">您可以输入您的心得，与大家共勉。</string>
+    <string name="fenxiang">分享</string>
+    <string name="fenxiangxinde">分享心得</string>
+    <string name="zantinbofang">暂停播放</string>
+    <string name="jixvbofang">继续播放</string>
+    <string name="dishiguanbi">定时关闭</string>
+    <string name="tuichuruanjian">退出软件</string>
+    <string name="tianjiafoyue">添加佛乐</string>
+    <string name="meixuanze">您没有选择定时</string>
+    <string name="houzidong">后自动关闭</string>
+    <string name="tianjianContent">"在您的手机SD卡根目录下有一个名为“念佛机”的文件夹，找到它并将您自己的mp3佛乐放入其中，它便能够加入到这个列表中供您播放。"</string>
+    <string name="guanyu2">V3.0 又过了两个多月，我还是又跑回来更新这APP了，这一次添加了导入佛乐功能，彻底解决了曲目少、曲目短的严重缺陷，使得它真正变成了一个可以让大多数人 都接受念佛机。同时界面也进行了小小的修改优化。我愿用以后所有的时光善待自己，以缅怀那些生命中永远不会逝去的曾经，生活从来都不是那么简单。不论事情变得多坏，在不远的地方，相信总会有一些美好即将来临。
+\n\n---------------------------------------------------------------\n\n
+V2.0 时隔了好几个月，对我而言都快一个学期了，终于又有机会回来更新了这个念佛机，在这几个月里我收到了很多反馈以及曲目推荐，我百忙中抽出了一点时间将许多本应该有的功能加上，并整理了曲目。不知是否有从一开始就一直使用1.0版本的人现在升级了这个2.0版本呢？ 我很欣慰。
+在一个最美的时光里,遇见了许许多多的人。发生了许许多多的事，在一以天计算的时光里, 我们感到如此忧伤与快乐。但我相信, 无论发生什么事情，它都是生命中能唯一会发生的事情。，无论看起来多么巧合，所有的偶遇都是久违的重逢，所有的偶然都是必然的假象。无论事情发生在什么时候，都是正确的时候。在你觉得为时已晚的时刻，恰恰是最早的时候。</string>
 
-
-</resources>
+    </resources>

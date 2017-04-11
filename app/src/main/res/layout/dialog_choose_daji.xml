@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="70dp"
+              android:layout_height="wrap_content"
+              style="@style/mDialog"
+              android:orientation="vertical"
+              android:background="#1d214c" >
+
+    <ImageView
+        android:id="@+id/dia_imageView"
+        android:background="@drawable/dia_image"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="0.8"
+        android:elevation="4dp" />
+
+    <ListView
+        android:layout_below="@id/dia_imageView"
+        android:paddingLeft="2dp"
+        android:layout_marginTop="7dp"
+        android:paddingRight="2dp"
+        android:id="@+id/dialog_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@id/dialog_list_view"
+        android:layout_alignParentRight="true"
+        android:id="@+id/dialog_daji_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="返回"
+        android:textColorHint="#FAFAFA"
+        android:textColorHighlight="#FAFAFA"
+        android:textColorLink="#FAFAFA"
+        android:textSize="18sp"
+        android:background="#1d214c"
+        android:textColor="#d94335" />
+
+</RelativeLayout>

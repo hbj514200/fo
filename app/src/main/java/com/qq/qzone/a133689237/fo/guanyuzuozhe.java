@@ -9,15 +9,13 @@ import android.widget.Button;
 
 public class guanyuzuozhe extends Activity {
 
-    private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_guanyuzuozhe);
 
-        button = (Button) findViewById(R.id.guanyuzuozhe_button);
+        Button button = (Button) findViewById(R.id.guanyuzuozhe_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

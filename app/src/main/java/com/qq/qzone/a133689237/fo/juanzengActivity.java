@@ -24,7 +24,6 @@ public class juanzengActivity extends Activity {
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
-
                     setContentView(R.layout.activity_juanzeng2);
                     juanzengButton = (Button) findViewById(R.id.zhifubao_button);
                     zhifubaobutton = (Button) findViewById(R.id.paypal_button);

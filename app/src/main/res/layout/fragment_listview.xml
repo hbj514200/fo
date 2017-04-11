@@ -1,34 +1,66 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#1d214c"
-    android:orientation="vertical">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#1d214c"
+              android:orientation="vertical">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_weight="4"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
         <ListView
             android:id="@+id/main_listview"
-            android:divider="#3c3c3c"
-            android:dividerHeight="1px"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:divider="#3c3c3c"
+            android:dividerHeight="1px"/>
+
         <android.support.design.widget.FloatingActionButton
-            android:layout_gravity="end|top"
             android:id="@+id/main_fab_setting"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="18dp"
-            android:src="@drawable/setting_button"
-            app:borderWidth="0dp"
-            app:elevation="12dp"
-            android:padding="5dp"
-            app:backgroundTint="#90a63a"
-            app:pressedTranslationZ="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabSize="mini" />
+            android:layout_gravity="end|top"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="25dp"
+            android:padding="5dp"
+            android:src="@drawable/setting_button"
+            app:backgroundTint="#90a63a"
+            app:borderWidth="0dp"
+            app:elevation="12dp"
+            app:fabSize="mini"
+            app:pressedTranslationZ="20dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_fab_setting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center|top"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="80.0dip"
+            android:padding="5.0dip"
+            android:src="@drawable/caidan_button"
+            app:backgroundTint="#ff90a63a"
+            app:borderWidth="0.0dip"
+            app:elevation="12.0dip"
+            app:fabSize="mini"
+            app:pressedTranslationZ="20.0dip"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_fab_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center|top"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="135.0dip"
+            android:padding="5.0dip"
+            android:src="@drawable/fab_people"
+            app:backgroundTint="#ffeb787c"
+            app:borderWidth="0.0dip"
+            app:elevation="12.0dip"
+            app:fabSize="mini"
+            app:pressedTranslationZ="20.0dip"/>
     </android.support.design.widget.CoordinatorLayout>
 
     <RelativeLayout
@@ -38,33 +70,47 @@
 
         <ImageView
             android:id="@+id/main_zuo"
-            android:src="@drawable/main_zuo_xml"
-            android:layout_alignParentLeft="true"
-            android:alpha="0.95"
-            android:adjustViewBounds="true"
-            android:layout_margin="10dp"
-            android:padding="11dp"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content" />
-        <ImageView
-            android:src="@drawable/main_foxiang"
-            android:id="@+id/main_foxiang"
-            android:layout_centerHorizontal="true"
-            android:adjustViewBounds="true"
-
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <ImageView
-            android:elevation="8dp"
-            android:id="@+id/main_you"
-            android:src="@drawable/main_you_xml"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
             android:adjustViewBounds="true"
+            android:alpha="0.72"
             android:padding="11dp"
+            android:src="@drawable/main_zuo_xml"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/main_foxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/main_foxiang"/>
+            <ImageView
+                android:id="@+id/main_foxiang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:visibility="invisible"
+                android:src="@drawable/main_press"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/main_you"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
-            android:layout_height="match_parent"
-            android:alpha="0.95"
-            android:layout_width="wrap_content" />
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:elevation="8dp"
+            android:padding="11dp"
+            android:src="@drawable/main_you_xml"/>
 
     </RelativeLayout>
 

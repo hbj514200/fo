@@ -13,7 +13,6 @@ import com.firebase.client.Firebase;
 public class fankuiActivity extends AppCompatActivity {
 
     private EditText contentEditText;
-    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,7 @@ public class fankuiActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         contentEditText = (EditText) findViewById(R.id.fankui_content);
-        button = (Button) findViewById(R.id.fankui_button);
+        Button button = (Button) findViewById(R.id.fankui_button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

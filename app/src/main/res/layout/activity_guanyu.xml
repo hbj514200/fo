@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <ImageView
             android:id="@+id/guanyu_image"
-            android:src="@drawable/banben"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/banben"/>
 
         <TextView
             android:id="@+id/guanyu_name"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/guanyu_image"
-            android:layout_marginTop="80dp"
-            android:text="@string/banben"
-            android:textSize="25sp"
-            android:textColor="#010101"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guanyu_image"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="40.0dip"
+            android:text="@string/guanyu2"
+            android:textSize="18.0sp"/>
 
-    <TextView
-        android:text="Mr.xiaoxiang 2016 SiRan"
-        android:textSize="10sp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:padding="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guanyu_name"
+            android:layout_centerHorizontal="true"
+            android:padding="10.0dip"
+            android:text="Mr.xiaoxiang 2016 SiRan"
+            android:textSize="10.0sp"/>
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

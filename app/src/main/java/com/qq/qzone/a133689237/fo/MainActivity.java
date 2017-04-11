@@ -7,9 +7,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private Fragment listFragement = null;
     private FragmentManager fm = null;
     private TextView text;
-    private LinearLayout adLayout = null;
-    private Timer timer = new Timer();
     private int bannerflag = 0;
     InterstitialAd mInterstitialAd;
     Handler myhandler = new Handler(Looper.getMainLooper()) {
@@ -42,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.main_list_container, listFragement).commit();
 
         text = (TextView) findViewById(R.id.main_text);
-        adLayout =(LinearLayout)findViewById(R.id.adLayout);
         dinshiAD();
         admob();
     }
@@ -83,19 +80,13 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                try { Thread.sleep(40000); } catch (Exception e) { }
-                myhandler.sendMessage(new Message() );
-                try { Thread.sleep(300000); } catch (Exception e) { }
-                myhandler.sendMessage(new Message() );
-                try { Thread.sleep(300000); } catch (Exception e) { }
-                myhandler.sendMessage(new Message() );
-                try { Thread.sleep(300000); } catch (Exception e) { }
-                myhandler.sendMessage(new Message() );
-                try { Thread.sleep(300000); } catch (Exception e) { }
-                myhandler.sendMessage(new Message() );
+                try { Thread.sleep(40000);  myhandler.sendMessage(new Message() ); } catch (Exception e) { }
+                try { Thread.sleep(300000); myhandler.sendMessage(new Message() ); } catch (Exception e) { }
+                try { Thread.sleep(300000); myhandler.sendMessage(new Message() ); } catch (Exception e) { }
+                try { Thread.sleep(300000); myhandler.sendMessage(new Message() ); } catch (Exception e) { }
+                try { Thread.sleep(300000); myhandler.sendMessage(new Message() ); } catch (Exception e) { }
             }
         }).start();
-
     }
 
     private void requestNewInterstitial() {
@@ -107,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
     private void admob(){
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-6630898560544189/3871700555");
-
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
@@ -115,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         requestNewInterstitial();
+    }
+
+    public void guanbi(){
+        //定时回调退出程序
+        finish();
+        System.exit(0);
     }
 
 }

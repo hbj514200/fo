@@ -2,7 +2,7 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/beijin</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -51,6 +51,10 @@
 
 
     <style name="fankuiTheme" parent="AppTheme">
+    </style>
+
+    <style name="mDialog" parent="AppTheme">
+        <item name="android:textColor">#FAFAFA</item>
     </style>
 
 </resources>
